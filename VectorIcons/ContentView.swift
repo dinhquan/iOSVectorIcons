@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let icons = IconFont.AntDesign.allCases.map {
+    private let icons = IconFont.AntDesign.allCases.map {
         _Icon(icon: IconFont.antDesign($0), name: String(describing: $0))
     }
 
