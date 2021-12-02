@@ -209,20 +209,20 @@
 		14A812EC27584A6B00853C15 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				14A812F827584A6B00853C15 /* AntDesign.swift */,
 				14A812ED27584A6B00853C15 /* Entypo.swift */,
+				14A812FA27584A6B00853C15 /* EvilIcons.swift */,
+				14A812F327584A6B00853C15 /* Feather.swift */,
+				14A812F727584A6B00853C15 /* FontAwesome.swift */,
+				14A812F227584A6B00853C15 /* FontAwesome5.swift */,
+				14A812F627584A6B00853C15 /* Fontisto.swift */,
+				14A812F527584A6B00853C15 /* Foundation.swift */,
+				14A812F427584A6B00853C15 /* Ionicons.swift */,
+				14A812F927584A6B00853C15 /* MaterialCommunityIcons.swift */,
 				14A812EE27584A6B00853C15 /* MaterialIcons.swift */,
 				14A812EF27584A6B00853C15 /* Octicons.swift */,
 				14A812F027584A6B00853C15 /* SimpleLineIcons.swift */,
 				14A812F127584A6B00853C15 /* Zocial.swift */,
-				14A812F227584A6B00853C15 /* FontAwesome5.swift */,
-				14A812F327584A6B00853C15 /* Feather.swift */,
-				14A812F427584A6B00853C15 /* Ionicons.swift */,
-				14A812F527584A6B00853C15 /* Foundation.swift */,
-				14A812F627584A6B00853C15 /* Fontisto.swift */,
-				14A812F727584A6B00853C15 /* FontAwesome.swift */,
-				14A812F827584A6B00853C15 /* AntDesign.swift */,
-				14A812F927584A6B00853C15 /* MaterialCommunityIcons.swift */,
-				14A812FA27584A6B00853C15 /* EvilIcons.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -230,22 +230,22 @@
 		14A812FB27584A6B00853C15 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				14A812FC27584A6B00853C15 /* Fontisto.ttf */,
-				14A812FD27584A6B00853C15 /* Octicons.ttf */,
-				14A812FE27584A6B00853C15 /* Feather.ttf */,
-				14A812FF27584A6B00853C15 /* Entypo.ttf */,
-				14A8130027584A6B00853C15 /* FontAwesome5_Brands.ttf */,
-				14A8130127584A6B00853C15 /* MaterialCommunityIcons.ttf */,
 				14A8130227584A6B00853C15 /* AntDesign.ttf */,
+				14A812FF27584A6B00853C15 /* Entypo.ttf */,
+				14A8130927584A6B00853C15 /* EvilIcons.ttf */,
+				14A812FE27584A6B00853C15 /* Feather.ttf */,
+				14A8130727584A6B00853C15 /* FontAwesome.ttf */,
+				14A8130027584A6B00853C15 /* FontAwesome5_Brands.ttf */,
+				14A8130627584A6B00853C15 /* FontAwesome5_Regular.ttf */,
+				14A8130527584A6B00853C15 /* FontAwesome5_Solid.ttf */,
+				14A812FC27584A6B00853C15 /* Fontisto.ttf */,
 				14A8130327584A6B00853C15 /* Foundation.ttf */,
 				14A8130427584A6B00853C15 /* Ionicons.ttf */,
-				14A8130527584A6B00853C15 /* FontAwesome5_Solid.ttf */,
-				14A8130627584A6B00853C15 /* FontAwesome5_Regular.ttf */,
-				14A8130727584A6B00853C15 /* FontAwesome.ttf */,
-				14A8130827584A6B00853C15 /* Zocial.ttf */,
-				14A8130927584A6B00853C15 /* EvilIcons.ttf */,
-				14A8130A27584A6B00853C15 /* SimpleLineIcons.ttf */,
+				14A8130127584A6B00853C15 /* MaterialCommunityIcons.ttf */,
 				14A8130B27584A6B00853C15 /* MaterialIcons.ttf */,
+				14A812FD27584A6B00853C15 /* Octicons.ttf */,
+				14A8130A27584A6B00853C15 /* SimpleLineIcons.ttf */,
+				14A8130827584A6B00853C15 /* Zocial.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
