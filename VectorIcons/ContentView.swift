@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    let icons = IconFont.AntDesign.allCases.map {
+        _Icon(icon: IconFont.antDesign($0), name: String(describing: $0))
+    }
+
     var body: some View {
-        Icon(.antDesign(.apple1), size: 15)
+        VStack {
+            List(icons) { icon in
+                HStack {
+                    Text(icon.name)
+                    Spacer()
+                    Icon(icon.icon, size: 14)
+                }
+            }
+        }
+    }
+}
+
+private struct _Icon: Identifiable {
+    let icon: IconFont
+    let name: String
+    
+    var id: String {
+        name
     }
 }
 
