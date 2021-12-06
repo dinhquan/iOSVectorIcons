@@ -47,6 +47,7 @@
 		14A8132727584A6B00853C15 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14A8130927584A6B00853C15 /* EvilIcons.ttf */; };
 		14A8132827584A6B00853C15 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14A8130A27584A6B00853C15 /* SimpleLineIcons.ttf */; };
 		14A8132927584A6B00853C15 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14A8130B27584A6B00853C15 /* MaterialIcons.ttf */; };
+		14A8132B2758714900853C15 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8132A2758714900853C15 /* IconButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		14A8130927584A6B00853C15 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		14A8130A27584A6B00853C15 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		14A8130B27584A6B00853C15 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		14A8132A2758714900853C15 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				149C75402742008900B5B8C8 /* FontRegistering.swift */,
 				149C751D2741E2B600B5B8C8 /* Icon.swift */,
 				149C7542274200A500B5B8C8 /* IconFont.swift */,
+				14A8132A2758714900853C15 /* IconButton.swift */,
 				14A812EC27584A6B00853C15 /* Fonts */,
 				14A812FB27584A6B00853C15 /* Resources */,
 			);
@@ -404,6 +407,7 @@
 				14A8131327584A6B00853C15 /* Ionicons.swift in Sources */,
 				14A8131627584A6B00853C15 /* FontAwesome.swift in Sources */,
 				14A8131227584A6B00853C15 /* Feather.swift in Sources */,
+				14A8132B2758714900853C15 /* IconButton.swift in Sources */,
 				14A8130E27584A6B00853C15 /* Octicons.swift in Sources */,
 				14A8131427584A6B00853C15 /* Foundation.swift in Sources */,
 				149C74F52741E28D00B5B8C8 /* ContentView.swift in Sources */,

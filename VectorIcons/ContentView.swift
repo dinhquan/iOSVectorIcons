@@ -14,11 +14,14 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            IconButton(.antDesign(.filter), fill: .init()) {
+                
+            }
             List(icons) { icon in
                 HStack {
                     Text(icon.name)
                     Spacer()
-                    Icon(icon.icon, size: 14)
+                    Icon(icon.icon)
                 }
             }
         }

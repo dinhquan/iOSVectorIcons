@@ -11,7 +11,7 @@ public struct Icon: View {
     let icon: IconFont
     let size: CGFloat
     
-    public init(_ icon: IconFont, size: CGFloat) {
+    public init(_ icon: IconFont, size: CGFloat = 16) {
         self.icon = icon
         self.size = size
         
