@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum MaterialIcons: UInt32 {
+    public enum MaterialIcons: UInt32, CaseIterable {
         case _360 = 58743
         case _10k = 59729
         case _10mp = 59730

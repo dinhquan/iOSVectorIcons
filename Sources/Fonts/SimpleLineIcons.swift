@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum SimpleLineIcons: UInt32 {
+    public enum SimpleLineIcons: UInt32, CaseIterable {
         case user = 57349
         case people = 57345
         case user_female = 57344

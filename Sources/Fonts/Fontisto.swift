@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum Fontisto: UInt32 {
+    public enum Fontisto: UInt32, CaseIterable {
         case acrobat_reader = 60095
         case applemusic = 60096
         case atlassian = 60097

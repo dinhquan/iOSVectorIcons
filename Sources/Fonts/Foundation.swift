@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum Foundation: UInt32 {
+    public enum Foundation: UInt32, CaseIterable {
         case address_book = 61696
         case alert = 61697
         case align_center = 61698

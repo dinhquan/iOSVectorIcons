@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum Ionicons: UInt32 {
+    public enum Ionicons: UInt32, CaseIterable {
         case add = 61696
         case add_circle = 61697
         case add_circle_outline = 61698

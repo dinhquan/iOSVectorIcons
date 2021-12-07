@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum Octicons: UInt32 {
+    public enum Octicons: UInt32, CaseIterable {
         case alert = 61696
         case archive = 61697
         case arrow_both = 61698

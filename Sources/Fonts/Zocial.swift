@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum Zocial: UInt32 {
+    public enum Zocial: UInt32, CaseIterable {
         case acrobat = 61696
         case amazon = 61697
         case android = 61698

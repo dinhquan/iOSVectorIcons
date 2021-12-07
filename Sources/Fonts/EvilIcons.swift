@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum EvilIcons: UInt32 {
+    public enum EvilIcons: UInt32, CaseIterable {
         case archive = 61696
         case arrow_down = 61697
         case arrow_left = 61698

@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum Entypo: UInt32 {
+    public enum Entypo: UInt32, CaseIterable {
         case _500px = 61696
         case _500px_with_circle = 61697
         case add_to_list = 61698

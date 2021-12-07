@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum FontAwesome: UInt32 {
+    public enum FontAwesome: UInt32, CaseIterable {
         case glass = 61440
         case music = 61441
         case search = 61442

@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum Feather: UInt32 {
+    public enum Feather: UInt32, CaseIterable {
         case activity = 61696
         case airplay = 61697
         case alert_circle = 61698

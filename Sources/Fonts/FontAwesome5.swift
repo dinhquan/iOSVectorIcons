@@ -8,7 +8,7 @@
 import Foundation
 
 extension IconFont {
-    public enum FontAwesome5: UInt32 {
+    public enum FontAwesome5: UInt32, CaseIterable {
         case _500px = 62062
         case accessible_icon = 62312
         case accusoft = 62313
