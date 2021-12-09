@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    fileprivate let allCollections: [IconCollection]
+    
     @State fileprivate var collections: [IconCollection] = []
+    @State var searchText = ""
 
     private let columnWidth = (UIScreen.main.bounds.width - 100) / 4
     private let columns = [
@@ -18,42 +21,59 @@ struct ContentView: View {
         GridItem(.flexible())
     ]
     
+    init() {
+        allCollections = IconCollection.all
+    }
+    
     var body: some View {
         Group {
-            VStack {
+            VStack(spacing: 0) {
+                Group {
+                    TextField("Search an icon", text: $searchText)
+                        .onChange(of: searchText) {
+                            search(keyword: $0.trimmingCharacters(in: .whitespacesAndNewlines))
+                        }
+                        .padding(.vertical, 6)
+                        .padding(.horizontal, 8)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(white: 0.94)))
+                        .padding()
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
+                    Rectangle()
+                        .frame(height: 0.5)
+                        .foregroundColor(Color(white: 0.9))
+                }
                 List {
                     ForEach(collections) { collection in
-                        Section(header: Text(collection.name)) {
+                        Section(header: Text(collection.name).padding(.horizontal, 15)) {
                             LazyVGrid(columns: columns) {
                                 ForEach(collection.items) { item in
                                     VStack(spacing: 0) {
-                                        Icon(item.icon)
+                                        Icon(item.icon, size: 18)
                                         Text(item.name)
                                             .font(.system(size: 12))
                                             .minimumScaleFactor(0.5)
                                             .padding(.top, 4)
                                     }
                                     .frame(height: 40)
+                                    .padding(.vertical, 4)
                                 }
                             }
                         }
+                        .listRowInsets(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
                     }
                 }
-                .listStyle(GroupedListStyle())
+                .listStyle(PlainListStyle())
             }
-        }
-        .onAppear {
-            loadFonts()
+        }.onAppear {
+            collections = allCollections
         }
     }
     
-    private func loadFonts() {
-        DispatchQueue.global().async {
-            let all = IconCollection.all
-            DispatchQueue.main.async {
-                self.collections = all
-            }
-        }
+    private func search(keyword: String) {
+        collections = allCollections
+            .map { $0.searching(keyword: keyword) }
+            .filter { !$0.items.isEmpty }
     }
 }
 
@@ -71,6 +91,10 @@ private struct IconCollection: Identifiable {
     
     var id: String {
         name
+    }
+    
+    func searching(keyword: String) -> IconCollection {
+        return IconCollection(name: name, items: items.filter { $0.name.lowercased().contains(keyword.lowercased()) })
     }
     
     static var all: [IconCollection] {
