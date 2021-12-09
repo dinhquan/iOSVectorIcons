@@ -22,7 +22,6 @@ public struct Icon: View {
     
     public var body: some View {
         Text(icon.text)
-            .padding()
             .font(Font.custom(icon.fontName, size: size))
     }
 }

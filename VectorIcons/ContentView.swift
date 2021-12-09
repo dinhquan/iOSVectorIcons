@@ -10,23 +10,36 @@ import SwiftUI
 struct ContentView: View {
     @State fileprivate var collections: [IconCollection] = []
 
+    private let columnWidth = (UIScreen.main.bounds.width - 100) / 4
+    private let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         Group {
             VStack {
                 List {
                     ForEach(collections) { collection in
                         Section(header: Text(collection.name)) {
-                            ForEach(collection.items) { item in
-                                HStack {
-                                    Text(item.name)
-                                    Spacer()
-                                    Icon(item.icon)
+                            LazyVGrid(columns: columns) {
+                                ForEach(collection.items) { item in
+                                    VStack(spacing: 0) {
+                                        Icon(item.icon)
+                                        Text(item.name)
+                                            .font(.system(size: 12))
+                                            .minimumScaleFactor(0.5)
+                                            .padding(.top, 4)
+                                    }
+                                    .frame(height: 40)
                                 }
-                                .frame(height: 40)
                             }
                         }
                     }
                 }
+                .listStyle(GroupedListStyle())
             }
         }
         .onAppear {
