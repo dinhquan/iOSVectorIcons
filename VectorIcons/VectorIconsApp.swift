@@ -11,7 +11,7 @@ import SwiftUI
 struct VectorIconsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IconListView()
         }
     }
 }

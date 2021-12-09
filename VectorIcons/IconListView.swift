@@ -7,11 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct IconListView: View {
     fileprivate let allCollections: [IconCollection]
     
-    @State fileprivate var collections: [IconCollection] = []
-    @State var searchText = ""
+    @State private var collections: [IconCollection] = []
+    @State private var searchText = ""
+    @State private var selectedItem: IconCollection.Item?
+    @State private var isPushed = false
+
 
     private let columnWidth = (UIScreen.main.bounds.width - 100) / 4
     private let columns = [
@@ -26,8 +29,13 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Group {
+        NavigationView {
             VStack(spacing: 0) {
+                if let item = selectedItem {
+                    NavigationLink(destination: IconDetailView(item: item), isActive: $isPushed) {
+                        EmptyView()
+                    }
+                }
                 Group {
                     TextField("Search an icon", text: $searchText)
                         .onChange(of: searchText) {
@@ -44,19 +52,15 @@ struct ContentView: View {
                         .foregroundColor(Color(white: 0.9))
                 }
                 List {
-                    ForEach(collections) { collection in
-                        Section(header: Text(collection.name).padding(.horizontal, 15)) {
+                    ForEach(collections, id: \.name) { collection in
+                        Section(header: Text(collection.name).padding(EdgeInsets(top: 4, leading: 15, bottom: 4, trailing: 0))) {
                             LazyVGrid(columns: columns) {
-                                ForEach(collection.items) { item in
-                                    VStack(spacing: 0) {
-                                        Icon(item.icon, size: 18)
-                                        Text(item.name)
-                                            .font(.system(size: 12))
-                                            .minimumScaleFactor(0.5)
-                                            .padding(.top, 4)
-                                    }
-                                    .frame(height: 40)
-                                    .padding(.vertical, 4)
+                                ForEach(collection.items, id: \.name) { item in
+                                    IconCell(item: item)
+                                        .onTapGesture {
+                                            selectedItem = item
+                                            isPushed = true
+                                        }
                                 }
                             }
                         }
@@ -65,6 +69,8 @@ struct ContentView: View {
                 }
                 .listStyle(PlainListStyle())
             }
+            .navigationBarHidden(true)
+
         }.onAppear {
             collections = allCollections
         }
@@ -77,21 +83,30 @@ struct ContentView: View {
     }
 }
 
-private struct IconCollection: Identifiable {
-    struct Item: Identifiable {
+struct IconCell: View {
+    let item: IconCollection.Item
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            Icon(item.icon, size: 18)
+            Text(item.name)
+                .font(.system(size: 12))
+                .minimumScaleFactor(0.5)
+                .padding(.top, 4)
+        }
+        .frame(height: 40)
+        .padding(.vertical, 4)
+    }
+}
+
+struct IconCollection {
+    struct Item {
         let name: String
         let icon: IconFont
-        
-        var id: String {
-            name
-        }
     }
+    
     let name: String
     let items: [Item]
-    
-    var id: String {
-        name
-    }
     
     func searching(keyword: String) -> IconCollection {
         return IconCollection(name: name, items: items.filter { $0.name.lowercased().contains(keyword.lowercased()) })
@@ -117,17 +132,8 @@ private struct IconCollection: Identifiable {
     }
 }
 
-private struct _Icon: Identifiable {
-    let icon: IconFont
-    let name: String
-    
-    var id: String {
-        name
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        IconListView()
     }
 }

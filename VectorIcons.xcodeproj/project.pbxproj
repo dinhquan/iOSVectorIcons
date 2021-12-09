@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14779D0F2761BC9600B64B98 /* IconDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14779D0E2761BC9600B64B98 /* IconDetailView.swift */; };
 		149C74F32741E28D00B5B8C8 /* VectorIconsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C74F22741E28D00B5B8C8 /* VectorIconsApp.swift */; };
-		149C74F52741E28D00B5B8C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C74F42741E28D00B5B8C8 /* ContentView.swift */; };
+		149C74F52741E28D00B5B8C8 /* IconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C74F42741E28D00B5B8C8 /* IconListView.swift */; };
 		149C74F72741E28F00B5B8C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149C74F62741E28F00B5B8C8 /* Assets.xcassets */; };
 		149C74FA2741E28F00B5B8C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149C74F92741E28F00B5B8C8 /* Preview Assets.xcassets */; };
 		149C75042741E28F00B5B8C8 /* VectorIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C75032741E28F00B5B8C8 /* VectorIconsTests.swift */; };
@@ -68,9 +69,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14779D0E2761BC9600B64B98 /* IconDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDetailView.swift; sourceTree = "<group>"; };
 		149C74EF2741E28D00B5B8C8 /* VectorIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VectorIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149C74F22741E28D00B5B8C8 /* VectorIconsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorIconsApp.swift; sourceTree = "<group>"; };
-		149C74F42741E28D00B5B8C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		149C74F42741E28D00B5B8C8 /* IconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconListView.swift; sourceTree = "<group>"; };
 		149C74F62741E28F00B5B8C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		149C74F92741E28F00B5B8C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		149C74FF2741E28F00B5B8C8 /* VectorIconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VectorIconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,7 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				149C74F22741E28D00B5B8C8 /* VectorIconsApp.swift */,
-				149C74F42741E28D00B5B8C8 /* ContentView.swift */,
+				149C74F42741E28D00B5B8C8 /* IconListView.swift */,
+				14779D0E2761BC9600B64B98 /* IconDetailView.swift */,
 				149C74F62741E28F00B5B8C8 /* Assets.xcassets */,
 				149C74F82741E28F00B5B8C8 /* Preview Content */,
 			);
@@ -410,11 +413,12 @@
 				14A8132B2758714900853C15 /* IconButton.swift in Sources */,
 				14A8130E27584A6B00853C15 /* Octicons.swift in Sources */,
 				14A8131427584A6B00853C15 /* Foundation.swift in Sources */,
-				149C74F52741E28D00B5B8C8 /* ContentView.swift in Sources */,
+				149C74F52741E28D00B5B8C8 /* IconListView.swift in Sources */,
 				14A8131027584A6B00853C15 /* Zocial.swift in Sources */,
 				14A8131827584A6B00853C15 /* MaterialCommunityIcons.swift in Sources */,
 				149C75412742008900B5B8C8 /* FontRegistering.swift in Sources */,
 				14A8131127584A6B00853C15 /* FontAwesome5.swift in Sources */,
+				14779D0F2761BC9600B64B98 /* IconDetailView.swift in Sources */,
 				14A8131527584A6B00853C15 /* Fontisto.swift in Sources */,
 				14A8130D27584A6B00853C15 /* MaterialIcons.swift in Sources */,
 				14A8130F27584A6B00853C15 /* SimpleLineIcons.swift in Sources */,
