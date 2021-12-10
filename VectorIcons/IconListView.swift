@@ -12,8 +12,6 @@ struct IconListView: View {
     
     @State private var collections: [IconCollection] = []
     @State private var searchText = ""
-    @State private var selectedItem: IconCollection.Item?
-    @State private var isPushed = false
 
 
     private let columnWidth = (UIScreen.main.bounds.width - 100) / 4
@@ -29,13 +27,8 @@ struct IconListView: View {
     }
     
     var body: some View {
-        NavigationView {
+        Group {
             VStack(spacing: 0) {
-                if let item = selectedItem {
-                    NavigationLink(destination: IconDetailView(item: item), isActive: $isPushed) {
-                        EmptyView()
-                    }
-                }
                 Group {
                     TextField("Search an icon", text: $searchText)
                         .onChange(of: searchText) {
@@ -57,10 +50,6 @@ struct IconListView: View {
                             LazyVGrid(columns: columns) {
                                 ForEach(collection.items, id: \.name) { item in
                                     IconCell(item: item)
-                                        .onTapGesture {
-                                            selectedItem = item
-                                            isPushed = true
-                                        }
                                 }
                             }
                         }
@@ -132,7 +121,7 @@ struct IconCollection {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct IconListView_Previews: PreviewProvider {
     static var previews: some View {
         IconListView()
     }

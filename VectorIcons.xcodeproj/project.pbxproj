@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14779D0F2761BC9600B64B98 /* IconDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14779D0E2761BC9600B64B98 /* IconDetailView.swift */; };
+		14779D0F2761BC9600B64B98 /* IconDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14779D0E2761BC9600B64B98 /* IconDemoView.swift */; };
 		149C74F32741E28D00B5B8C8 /* VectorIconsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C74F22741E28D00B5B8C8 /* VectorIconsApp.swift */; };
 		149C74F52741E28D00B5B8C8 /* IconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C74F42741E28D00B5B8C8 /* IconListView.swift */; };
 		149C74F72741E28F00B5B8C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149C74F62741E28F00B5B8C8 /* Assets.xcassets */; };
@@ -69,7 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14779D0E2761BC9600B64B98 /* IconDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDetailView.swift; sourceTree = "<group>"; };
+		14779D0E2761BC9600B64B98 /* IconDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDemoView.swift; sourceTree = "<group>"; };
 		149C74EF2741E28D00B5B8C8 /* VectorIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VectorIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149C74F22741E28D00B5B8C8 /* VectorIconsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorIconsApp.swift; sourceTree = "<group>"; };
 		149C74F42741E28D00B5B8C8 /* IconListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconListView.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			children = (
 				149C74F22741E28D00B5B8C8 /* VectorIconsApp.swift */,
 				149C74F42741E28D00B5B8C8 /* IconListView.swift */,
-				14779D0E2761BC9600B64B98 /* IconDetailView.swift */,
+				14779D0E2761BC9600B64B98 /* IconDemoView.swift */,
 				149C74F62741E28F00B5B8C8 /* Assets.xcassets */,
 				149C74F82741E28F00B5B8C8 /* Preview Content */,
 			);
@@ -202,10 +202,10 @@
 		149C751C2741E2A400B5B8C8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				149C75402742008900B5B8C8 /* FontRegistering.swift */,
 				149C751D2741E2B600B5B8C8 /* Icon.swift */,
-				149C7542274200A500B5B8C8 /* IconFont.swift */,
 				14A8132A2758714900853C15 /* IconButton.swift */,
+				149C7542274200A500B5B8C8 /* IconFont.swift */,
+				149C75402742008900B5B8C8 /* FontRegistering.swift */,
 				14A812EC27584A6B00853C15 /* Fonts */,
 				14A812FB27584A6B00853C15 /* Resources */,
 			);
@@ -418,7 +418,7 @@
 				14A8131827584A6B00853C15 /* MaterialCommunityIcons.swift in Sources */,
 				149C75412742008900B5B8C8 /* FontRegistering.swift in Sources */,
 				14A8131127584A6B00853C15 /* FontAwesome5.swift in Sources */,
-				14779D0F2761BC9600B64B98 /* IconDetailView.swift in Sources */,
+				14779D0F2761BC9600B64B98 /* IconDemoView.swift in Sources */,
 				14A8131527584A6B00853C15 /* Fontisto.swift in Sources */,
 				14A8130D27584A6B00853C15 /* MaterialIcons.swift in Sources */,
 				14A8130F27584A6B00853C15 /* SimpleLineIcons.swift in Sources */,

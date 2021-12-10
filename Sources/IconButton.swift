@@ -11,20 +11,23 @@ struct IconButton: View {
     struct Fill {
         var color: Color
         var highlightedColor: Color
-        var size: CGSize!
+        var width: CGFloat!
+        var height: CGFloat!
         var cornerRadius: CGFloat
         var borderWidth: CGFloat
         var borderColor: Color
         
         init(color: Color = .white,
              highlightedColor: Color = .gray,
-             size: CGSize? = nil,
+             width: CGFloat? = nil,
+             height: CGFloat? = nil,
              cornerRadius: CGFloat = 8,
              borderWidth: CGFloat = 1,
              borderColor: Color = .black) {
             self.color = color
             self.highlightedColor = highlightedColor
-            self.size = size
+            self.width = width
+            self.height = height
             self.cornerRadius = cornerRadius
             self.borderWidth = borderWidth
             self.borderColor = borderColor
@@ -59,12 +62,11 @@ struct IconButton: View {
                 .font(Font.custom(icon.fontName, size: size))
                 .foregroundColor(color)
         }
-        .if(fill?.size != nil) {
-            $0.frame(width: fill.size.width, height: fill.size.height)
-        }
         .if(fill != nil) {
             $0.buttonStyle(
-                HighlightedButtonStyle(backgroundColor: fill.color,
+                HighlightedButtonStyle(width: fill.width,
+                                       height: fill.height,
+                                       backgroundColor: fill.color,
                                        underlayColor: fill.highlightedColor,
                                        cornerRadius: fill.cornerRadius,
                                        borderColor: fill.borderColor,
@@ -75,6 +77,8 @@ struct IconButton: View {
 }
 
 private struct HighlightedButtonStyle: ButtonStyle {
+    let width: CGFloat!
+    let height: CGFloat!
     let backgroundColor: Color
     let underlayColor: Color
     let cornerRadius: CGFloat
@@ -84,6 +88,18 @@ private struct HighlightedButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .padding()
+            .if(width != nil && width == .infinity) {
+                $0.frame(maxWidth: .infinity)
+            }
+            .if(width != nil && width != .infinity) {
+                $0.frame(width: width)
+            }
+            .if(height != nil && height == .infinity) {
+                $0.frame(maxHeight: .infinity)
+            }
+            .if(height != nil && height != .infinity) {
+                $0.frame(height: height)
+            }
             .background(configuration.isPressed ? underlayColor : backgroundColor)
             .cornerRadius(cornerRadius)
             .overlay(

@@ -11,7 +11,10 @@ import SwiftUI
 struct VectorIconsApp: App {
     var body: some Scene {
         WindowGroup {
-            IconListView()
+            TabView {
+                IconListView()
+                IconDemoView()
+            }
         }
     }
 }
