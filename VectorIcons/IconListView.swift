@@ -66,6 +66,10 @@ struct IconListView: View {
     }
     
     private func search(keyword: String) {
+        if keyword.isEmpty {
+            collections = allCollections
+            return
+        }
         collections = allCollections
             .map { $0.searching(keyword: keyword) }
             .filter { !$0.items.isEmpty }
