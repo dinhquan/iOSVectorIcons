@@ -49,6 +49,7 @@
 		14A8132827584A6B00853C15 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14A8130A27584A6B00853C15 /* SimpleLineIcons.ttf */; };
 		14A8132927584A6B00853C15 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14A8130B27584A6B00853C15 /* MaterialIcons.ttf */; };
 		14A8132B2758714900853C15 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8132A2758714900853C15 /* IconButton.swift */; };
+		14C168DE276C9F4F003BA5EA /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C168DD276C9F4F003BA5EA /* UIKitExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		14A8130A27584A6B00853C15 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		14A8130B27584A6B00853C15 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		14A8132A2758714900853C15 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		14C168DD276C9F4F003BA5EA /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 			children = (
 				149C751D2741E2B600B5B8C8 /* Icon.swift */,
 				14A8132A2758714900853C15 /* IconButton.swift */,
+				14C168DD276C9F4F003BA5EA /* UIKitExtension.swift */,
 				149C7542274200A500B5B8C8 /* IconFont.swift */,
 				149C75402742008900B5B8C8 /* FontRegistering.swift */,
 				14A812EC27584A6B00853C15 /* Fonts */,
@@ -422,6 +425,7 @@
 				14A8131527584A6B00853C15 /* Fontisto.swift in Sources */,
 				14A8130D27584A6B00853C15 /* MaterialIcons.swift in Sources */,
 				14A8130F27584A6B00853C15 /* SimpleLineIcons.swift in Sources */,
+				14C168DE276C9F4F003BA5EA /* UIKitExtension.swift in Sources */,
 				149C74F32741E28D00B5B8C8 /* VectorIconsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

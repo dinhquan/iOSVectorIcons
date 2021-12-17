@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0.0, *)
 public struct Icon: View {
     let icon: IconFont
     let size: CGFloat
@@ -17,9 +18,7 @@ public struct Icon: View {
         self.size = size
         self.color = color
         
-        if !FontRegistering.shared.isRegistered {
-            FontRegistering.shared.registerFonts()
-        }
+        FontRegistering.register()
     }
     
     public var body: some View {

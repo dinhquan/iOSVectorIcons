@@ -12,6 +12,12 @@ final class FontRegistering {
     static let shared = FontRegistering()
     var isRegistered = false
     
+    static func register() {
+        if !shared.isRegistered {
+            shared.registerFonts()
+        }
+    }
+    
     func registerFonts() {
         let bundle = Bundle(for: Self.self)
         let fontFiles = [

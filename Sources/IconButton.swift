@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0.0, *)
 public struct IconButton: View {
     let icon: IconFont
     let size: CGFloat
@@ -22,9 +23,7 @@ public struct IconButton: View {
         self.color = color
         self.action = action
         
-        if !FontRegistering.shared.isRegistered {
-            FontRegistering.shared.registerFonts()
-        }
+        FontRegistering.register()
     }
     
     public var body: some View {
@@ -38,6 +37,7 @@ public struct IconButton: View {
     }
 }
 
+@available(iOS 13.0.0, *)
 extension IconButton {
     func style(
         width: CGFloat? = nil,
@@ -61,6 +61,7 @@ extension IconButton {
     }
 }
 
+@available(iOS 13.0.0, *)
 private struct HighlightedButtonStyle: ButtonStyle {
     let width: CGFloat!
     let height: CGFloat!
@@ -99,6 +100,7 @@ private struct HighlightedButtonStyle: ButtonStyle {
     }
 }
 
+@available(iOS 13.0.0, *)
 private extension View {
     /// Applies the given transform if the given condition evaluates to `true`.
     /// - Parameters:
