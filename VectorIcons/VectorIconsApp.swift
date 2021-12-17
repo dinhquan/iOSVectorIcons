@@ -13,7 +13,15 @@ struct VectorIconsApp: App {
         WindowGroup {
             TabView {
                 IconListView()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Search")
+                    }
                 IconDemoView()
+                    .tabItem {
+                        Image(systemName: "note")
+                        Text("Demo")
+                    }
             }
         }
     }

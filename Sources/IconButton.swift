@@ -7,33 +7,7 @@
 
 import SwiftUI
 
-struct IconButton: View {
-    struct Fill {
-        var color: Color
-        var highlightedColor: Color
-        var width: CGFloat!
-        var height: CGFloat!
-        var cornerRadius: CGFloat
-        var borderWidth: CGFloat
-        var borderColor: Color
-        
-        init(color: Color = .white,
-             highlightedColor: Color = .gray,
-             width: CGFloat? = nil,
-             height: CGFloat? = nil,
-             cornerRadius: CGFloat = 8,
-             borderWidth: CGFloat = 1,
-             borderColor: Color = .black) {
-            self.color = color
-            self.highlightedColor = highlightedColor
-            self.width = width
-            self.height = height
-            self.cornerRadius = cornerRadius
-            self.borderWidth = borderWidth
-            self.borderColor = borderColor
-        }
-    }
-    
+public struct IconButton: View {
     let icon: IconFont
     let size: CGFloat
     let color: Color
@@ -56,7 +30,7 @@ struct IconButton: View {
         }
     }
     
-    var body: some View {
+    public var body: some View {
         Button(action: action) {
             Text(icon.text)
                 .font(Font.custom(icon.fontName, size: size))
@@ -76,6 +50,35 @@ struct IconButton: View {
     }
 }
 
+extension IconButton {
+    public struct Fill {
+        var color: Color
+        var highlightedColor: Color
+        var width: CGFloat!
+        var height: CGFloat!
+        var cornerRadius: CGFloat
+        var borderWidth: CGFloat
+        var borderColor: Color
+        
+        init(color: Color = .white,
+             highlightedColor: Color? = nil,
+             width: CGFloat? = nil,
+             height: CGFloat? = nil,
+             cornerRadius: CGFloat = 8,
+             borderWidth: CGFloat = 1,
+             borderColor: Color = .black) {
+            self.color = color
+            self.width = width
+            self.height = height
+            self.cornerRadius = cornerRadius
+            self.borderWidth = borderWidth
+            self.borderColor = borderColor
+            
+            self.highlightedColor = highlightedColor ?? color.opacity(0.5)
+        }
+    }
+}
+
 private struct HighlightedButtonStyle: ButtonStyle {
     let width: CGFloat!
     let height: CGFloat!
@@ -87,7 +90,12 @@ private struct HighlightedButtonStyle: ButtonStyle {
 
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .padding()
+            .if(width == nil) {
+                $0.padding(.horizontal, 8)
+            }
+            .if(height == nil) {
+                $0.padding(.vertical, 8)
+            }
             .if(width != nil && width == .infinity) {
                 $0.frame(maxWidth: .infinity)
             }
