@@ -1,14 +1,14 @@
 //
-//  VectorIconsApp.swift
-//  VectorIcons
+//  iOSVectorIconsApp.swift
+//  iOSVectorIcons
 //
-//  Created by Quan on 15/11/2021.
+//  Created by Quan on 17/12/2021.
 //
 
 import SwiftUI
 
 @main
-struct VectorIconsApp: App {
+struct iOSVectorIconsApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {

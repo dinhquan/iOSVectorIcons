@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C168EC276CA316003BA5EA /* iOSVectorIconsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C168EB276CA316003BA5EA /* iOSVectorIconsApp.swift */; };
+		14C168F0276CA318003BA5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C168EF276CA318003BA5EA /* Assets.xcassets */; };
+		14C168F3276CA318003BA5EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C168F2276CA318003BA5EA /* Preview Assets.xcassets */; };
+		14C168FD276CA318003BA5EA /* iOSVectorIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C168FC276CA318003BA5EA /* iOSVectorIconsTests.swift */; };
+		14C16907276CA318003BA5EA /* iOSVectorIconsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16906276CA318003BA5EA /* iOSVectorIconsUITests.swift */; };
+		14C16909276CA318003BA5EA /* iOSVectorIconsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16908276CA318003BA5EA /* iOSVectorIconsUITestsLaunchTests.swift */; };
+		14C1693B276CA34F003BA5EA /* FontRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16916276CA34F003BA5EA /* FontRegistering.swift */; };
+		14C1693C276CA34F003BA5EA /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16917276CA34F003BA5EA /* Icon.swift */; };
+		14C1693D276CA34F003BA5EA /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16919276CA34F003BA5EA /* Fontisto.ttf */; };
+		14C1693E276CA34F003BA5EA /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C1691A276CA34F003BA5EA /* Octicons.ttf */; };
+		14C1693F276CA34F003BA5EA /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C1691B276CA34F003BA5EA /* Feather.ttf */; };
+		14C16940276CA34F003BA5EA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C1691C276CA34F003BA5EA /* Entypo.ttf */; };
+		14C16941276CA34F003BA5EA /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C1691D276CA34F003BA5EA /* FontAwesome5_Brands.ttf */; };
+		14C16942276CA34F003BA5EA /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C1691E276CA34F003BA5EA /* MaterialCommunityIcons.ttf */; };
+		14C16943276CA34F003BA5EA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C1691F276CA34F003BA5EA /* AntDesign.ttf */; };
+		14C16944276CA34F003BA5EA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16920276CA34F003BA5EA /* Foundation.ttf */; };
+		14C16945276CA34F003BA5EA /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16921276CA34F003BA5EA /* Ionicons.ttf */; };
+		14C16946276CA34F003BA5EA /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16922276CA34F003BA5EA /* FontAwesome5_Solid.ttf */; };
+		14C16947276CA34F003BA5EA /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16923276CA34F003BA5EA /* FontAwesome5_Regular.ttf */; };
+		14C16948276CA34F003BA5EA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16924276CA34F003BA5EA /* FontAwesome.ttf */; };
+		14C16949276CA34F003BA5EA /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16925276CA34F003BA5EA /* Zocial.ttf */; };
+		14C1694A276CA34F003BA5EA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16926276CA34F003BA5EA /* EvilIcons.ttf */; };
+		14C1694B276CA34F003BA5EA /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16927276CA34F003BA5EA /* SimpleLineIcons.ttf */; };
+		14C1694C276CA34F003BA5EA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16928276CA34F003BA5EA /* MaterialIcons.ttf */; };
+		14C1694D276CA34F003BA5EA /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16929276CA34F003BA5EA /* IconButton.swift */; };
+		14C1694E276CA34F003BA5EA /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1692A276CA34F003BA5EA /* UIKitExtension.swift */; };
+		14C1694F276CA34F003BA5EA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1692B276CA34F003BA5EA /* IconFont.swift */; };
+		14C16950276CA34F003BA5EA /* Entypo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1692D276CA34F003BA5EA /* Entypo.swift */; };
+		14C16951276CA34F003BA5EA /* MaterialIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1692E276CA34F003BA5EA /* MaterialIcons.swift */; };
+		14C16952276CA34F003BA5EA /* Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1692F276CA34F003BA5EA /* Octicons.swift */; };
+		14C16953276CA34F003BA5EA /* SimpleLineIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16930276CA34F003BA5EA /* SimpleLineIcons.swift */; };
+		14C16954276CA34F003BA5EA /* Zocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16931276CA34F003BA5EA /* Zocial.swift */; };
+		14C16955276CA34F003BA5EA /* FontAwesome5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16932276CA34F003BA5EA /* FontAwesome5.swift */; };
+		14C16956276CA34F003BA5EA /* Feather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16933276CA34F003BA5EA /* Feather.swift */; };
+		14C16957276CA34F003BA5EA /* Ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16934276CA34F003BA5EA /* Ionicons.swift */; };
+		14C16958276CA34F003BA5EA /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16935276CA34F003BA5EA /* Foundation.swift */; };
+		14C16959276CA34F003BA5EA /* Fontisto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16936276CA34F003BA5EA /* Fontisto.swift */; };
+		14C1695A276CA34F003BA5EA /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16937276CA34F003BA5EA /* FontAwesome.swift */; };
+		14C1695B276CA34F003BA5EA /* AntDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16938276CA34F003BA5EA /* AntDesign.swift */; };
+		14C1695C276CA34F003BA5EA /* MaterialCommunityIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16939276CA34F003BA5EA /* MaterialCommunityIcons.swift */; };
+		14C1695D276CA34F003BA5EA /* EvilIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1693A276CA34F003BA5EA /* EvilIcons.swift */; };
+		14C16960276CA366003BA5EA /* IconDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1695E276CA366003BA5EA /* IconDemoView.swift */; };
+		14C16961276CA366003BA5EA /* IconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1695F276CA366003BA5EA /* IconListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14C168F9276CA318003BA5EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C168E0276CA316003BA5EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C168E7276CA316003BA5EA;
+			remoteInfo = iOSVectorIcons;
+		};
+		14C16903276CA318003BA5EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C168E0276CA316003BA5EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C168E7276CA316003BA5EA;
+			remoteInfo = iOSVectorIcons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14C168E8276CA316003BA5EA /* iOSVectorIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVectorIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C168EB276CA316003BA5EA /* iOSVectorIconsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSVectorIconsApp.swift; sourceTree = "<group>"; };
+		14C168EF276CA318003BA5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14C168F2276CA318003BA5EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14C168F8276CA318003BA5EA /* iOSVectorIconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSVectorIconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C168FC276CA318003BA5EA /* iOSVectorIconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSVectorIconsTests.swift; sourceTree = "<group>"; };
+		14C16902276CA318003BA5EA /* iOSVectorIconsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSVectorIconsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C16906276CA318003BA5EA /* iOSVectorIconsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSVectorIconsUITests.swift; sourceTree = "<group>"; };
+		14C16908276CA318003BA5EA /* iOSVectorIconsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSVectorIconsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14C16916276CA34F003BA5EA /* FontRegistering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRegistering.swift; sourceTree = "<group>"; };
+		14C16917276CA34F003BA5EA /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		14C16919276CA34F003BA5EA /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		14C1691A276CA34F003BA5EA /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		14C1691B276CA34F003BA5EA /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		14C1691C276CA34F003BA5EA /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		14C1691D276CA34F003BA5EA /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		14C1691E276CA34F003BA5EA /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		14C1691F276CA34F003BA5EA /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		14C16920276CA34F003BA5EA /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		14C16921276CA34F003BA5EA /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		14C16922276CA34F003BA5EA /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		14C16923276CA34F003BA5EA /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		14C16924276CA34F003BA5EA /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		14C16925276CA34F003BA5EA /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		14C16926276CA34F003BA5EA /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		14C16927276CA34F003BA5EA /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		14C16928276CA34F003BA5EA /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		14C16929276CA34F003BA5EA /* IconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		14C1692A276CA34F003BA5EA /* UIKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		14C1692B276CA34F003BA5EA /* IconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
+		14C1692D276CA34F003BA5EA /* Entypo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entypo.swift; sourceTree = "<group>"; };
+		14C1692E276CA34F003BA5EA /* MaterialIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialIcons.swift; sourceTree = "<group>"; };
+		14C1692F276CA34F003BA5EA /* Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octicons.swift; sourceTree = "<group>"; };
+		14C16930276CA34F003BA5EA /* SimpleLineIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLineIcons.swift; sourceTree = "<group>"; };
+		14C16931276CA34F003BA5EA /* Zocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zocial.swift; sourceTree = "<group>"; };
+		14C16932276CA34F003BA5EA /* FontAwesome5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome5.swift; sourceTree = "<group>"; };
+		14C16933276CA34F003BA5EA /* Feather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feather.swift; sourceTree = "<group>"; };
+		14C16934276CA34F003BA5EA /* Ionicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ionicons.swift; sourceTree = "<group>"; };
+		14C16935276CA34F003BA5EA /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		14C16936276CA34F003BA5EA /* Fontisto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fontisto.swift; sourceTree = "<group>"; };
+		14C16937276CA34F003BA5EA /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
+		14C16938276CA34F003BA5EA /* AntDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDesign.swift; sourceTree = "<group>"; };
+		14C16939276CA34F003BA5EA /* MaterialCommunityIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialCommunityIcons.swift; sourceTree = "<group>"; };
+		14C1693A276CA34F003BA5EA /* EvilIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvilIcons.swift; sourceTree = "<group>"; };
+		14C1695E276CA366003BA5EA /* IconDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconDemoView.swift; sourceTree = "<group>"; };
+		14C1695F276CA366003BA5EA /* IconListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14C168E5276CA316003BA5EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C168F5276CA318003BA5EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C168FF276CA318003BA5EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14C168DF276CA316003BA5EA = {
+			isa = PBXGroup;
+			children = (
+				14C16915276CA34F003BA5EA /* Sources */,
+				14C168EA276CA316003BA5EA /* iOSVectorIcons */,
+				14C168FB276CA318003BA5EA /* iOSVectorIconsTests */,
+				14C16905276CA318003BA5EA /* iOSVectorIconsUITests */,
+				14C168E9276CA316003BA5EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14C168E9276CA316003BA5EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14C168E8276CA316003BA5EA /* iOSVectorIcons.app */,
+				14C168F8276CA318003BA5EA /* iOSVectorIconsTests.xctest */,
+				14C16902276CA318003BA5EA /* iOSVectorIconsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14C168EA276CA316003BA5EA /* iOSVectorIcons */ = {
+			isa = PBXGroup;
+			children = (
+				14C168EB276CA316003BA5EA /* iOSVectorIconsApp.swift */,
+				14C1695E276CA366003BA5EA /* IconDemoView.swift */,
+				14C1695F276CA366003BA5EA /* IconListView.swift */,
+				14C168EF276CA318003BA5EA /* Assets.xcassets */,
+				14C168F1276CA318003BA5EA /* Preview Content */,
+			);
+			path = iOSVectorIcons;
+			sourceTree = "<group>";
+		};
+		14C168F1276CA318003BA5EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14C168F2276CA318003BA5EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14C168FB276CA318003BA5EA /* iOSVectorIconsTests */ = {
+			isa = PBXGroup;
+			children = (
+				14C168FC276CA318003BA5EA /* iOSVectorIconsTests.swift */,
+			);
+			path = iOSVectorIconsTests;
+			sourceTree = "<group>";
+		};
+		14C16905276CA318003BA5EA /* iOSVectorIconsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14C16906276CA318003BA5EA /* iOSVectorIconsUITests.swift */,
+				14C16908276CA318003BA5EA /* iOSVectorIconsUITestsLaunchTests.swift */,
+			);
+			path = iOSVectorIconsUITests;
+			sourceTree = "<group>";
+		};
+		14C16915276CA34F003BA5EA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				14C16917276CA34F003BA5EA /* Icon.swift */,
+				14C16929276CA34F003BA5EA /* IconButton.swift */,
+				14C1692B276CA34F003BA5EA /* IconFont.swift */,
+				14C16916276CA34F003BA5EA /* FontRegistering.swift */,
+				14C1692A276CA34F003BA5EA /* UIKitExtension.swift */,
+				14C1692C276CA34F003BA5EA /* Fonts */,
+				14C16918276CA34F003BA5EA /* Resources */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		14C16918276CA34F003BA5EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14C1691F276CA34F003BA5EA /* AntDesign.ttf */,
+				14C1691C276CA34F003BA5EA /* Entypo.ttf */,
+				14C16926276CA34F003BA5EA /* EvilIcons.ttf */,
+				14C1691B276CA34F003BA5EA /* Feather.ttf */,
+				14C16924276CA34F003BA5EA /* FontAwesome.ttf */,
+				14C1691D276CA34F003BA5EA /* FontAwesome5_Brands.ttf */,
+				14C16923276CA34F003BA5EA /* FontAwesome5_Regular.ttf */,
+				14C16922276CA34F003BA5EA /* FontAwesome5_Solid.ttf */,
+				14C16919276CA34F003BA5EA /* Fontisto.ttf */,
+				14C16920276CA34F003BA5EA /* Foundation.ttf */,
+				14C16921276CA34F003BA5EA /* Ionicons.ttf */,
+				14C1691E276CA34F003BA5EA /* MaterialCommunityIcons.ttf */,
+				14C16928276CA34F003BA5EA /* MaterialIcons.ttf */,
+				14C1691A276CA34F003BA5EA /* Octicons.ttf */,
+				14C16927276CA34F003BA5EA /* SimpleLineIcons.ttf */,
+				14C16925276CA34F003BA5EA /* Zocial.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14C1692C276CA34F003BA5EA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				14C16938276CA34F003BA5EA /* AntDesign.swift */,
+				14C1692D276CA34F003BA5EA /* Entypo.swift */,
+				14C1693A276CA34F003BA5EA /* EvilIcons.swift */,
+				14C16933276CA34F003BA5EA /* Feather.swift */,
+				14C16937276CA34F003BA5EA /* FontAwesome.swift */,
+				14C16932276CA34F003BA5EA /* FontAwesome5.swift */,
+				14C16936276CA34F003BA5EA /* Fontisto.swift */,
+				14C16935276CA34F003BA5EA /* Foundation.swift */,
+				14C16934276CA34F003BA5EA /* Ionicons.swift */,
+				14C16939276CA34F003BA5EA /* MaterialCommunityIcons.swift */,
+				14C1692E276CA34F003BA5EA /* MaterialIcons.swift */,
+				14C1692F276CA34F003BA5EA /* Octicons.swift */,
+				14C16930276CA34F003BA5EA /* SimpleLineIcons.swift */,
+				14C16931276CA34F003BA5EA /* Zocial.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14C168E7276CA316003BA5EA /* iOSVectorIcons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C1690C276CA318003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIcons" */;
+			buildPhases = (
+				14C168E4276CA316003BA5EA /* Sources */,
+				14C168E5276CA316003BA5EA /* Frameworks */,
+				14C168E6276CA316003BA5EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSVectorIcons;
+			productName = iOSVectorIcons;
+			productReference = 14C168E8276CA316003BA5EA /* iOSVectorIcons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14C168F7276CA318003BA5EA /* iOSVectorIconsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C1690F276CA318003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIconsTests" */;
+			buildPhases = (
+				14C168F4276CA318003BA5EA /* Sources */,
+				14C168F5276CA318003BA5EA /* Frameworks */,
+				14C168F6276CA318003BA5EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14C168FA276CA318003BA5EA /* PBXTargetDependency */,
+			);
+			name = iOSVectorIconsTests;
+			productName = iOSVectorIconsTests;
+			productReference = 14C168F8276CA318003BA5EA /* iOSVectorIconsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14C16901276CA318003BA5EA /* iOSVectorIconsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C16912276CA318003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIconsUITests" */;
+			buildPhases = (
+				14C168FE276CA318003BA5EA /* Sources */,
+				14C168FF276CA318003BA5EA /* Frameworks */,
+				14C16900276CA318003BA5EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14C16904276CA318003BA5EA /* PBXTargetDependency */,
+			);
+			name = iOSVectorIconsUITests;
+			productName = iOSVectorIconsUITests;
+			productReference = 14C16902276CA318003BA5EA /* iOSVectorIconsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14C168E0276CA316003BA5EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					14C168E7276CA316003BA5EA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					14C168F7276CA318003BA5EA = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 14C168E7276CA316003BA5EA;
+					};
+					14C16901276CA318003BA5EA = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 14C168E7276CA316003BA5EA;
+					};
+				};
+			};
+			buildConfigurationList = 14C168E3276CA316003BA5EA /* Build configuration list for PBXProject "iOSVectorIcons" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14C168DF276CA316003BA5EA;
+			productRefGroup = 14C168E9276CA316003BA5EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14C168E7276CA316003BA5EA /* iOSVectorIcons */,
+				14C168F7276CA318003BA5EA /* iOSVectorIconsTests */,
+				14C16901276CA318003BA5EA /* iOSVectorIconsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14C168E6276CA316003BA5EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C1693D276CA34F003BA5EA /* Fontisto.ttf in Resources */,
+				14C16948276CA34F003BA5EA /* FontAwesome.ttf in Resources */,
+				14C16944276CA34F003BA5EA /* Foundation.ttf in Resources */,
+				14C16947276CA34F003BA5EA /* FontAwesome5_Regular.ttf in Resources */,
+				14C16945276CA34F003BA5EA /* Ionicons.ttf in Resources */,
+				14C1694A276CA34F003BA5EA /* EvilIcons.ttf in Resources */,
+				14C16940276CA34F003BA5EA /* Entypo.ttf in Resources */,
+				14C168F3276CA318003BA5EA /* Preview Assets.xcassets in Resources */,
+				14C16949276CA34F003BA5EA /* Zocial.ttf in Resources */,
+				14C1694B276CA34F003BA5EA /* SimpleLineIcons.ttf in Resources */,
+				14C1693F276CA34F003BA5EA /* Feather.ttf in Resources */,
+				14C1693E276CA34F003BA5EA /* Octicons.ttf in Resources */,
+				14C16941276CA34F003BA5EA /* FontAwesome5_Brands.ttf in Resources */,
+				14C16943276CA34F003BA5EA /* AntDesign.ttf in Resources */,
+				14C1694C276CA34F003BA5EA /* MaterialIcons.ttf in Resources */,
+				14C16946276CA34F003BA5EA /* FontAwesome5_Solid.ttf in Resources */,
+				14C16942276CA34F003BA5EA /* MaterialCommunityIcons.ttf in Resources */,
+				14C168F0276CA318003BA5EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C168F6276CA318003BA5EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C16900276CA318003BA5EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14C168E4276CA316003BA5EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C1694E276CA34F003BA5EA /* UIKitExtension.swift in Sources */,
+				14C16954276CA34F003BA5EA /* Zocial.swift in Sources */,
+				14C16958276CA34F003BA5EA /* Foundation.swift in Sources */,
+				14C1693B276CA34F003BA5EA /* FontRegistering.swift in Sources */,
+				14C16956276CA34F003BA5EA /* Feather.swift in Sources */,
+				14C16953276CA34F003BA5EA /* SimpleLineIcons.swift in Sources */,
+				14C16961276CA366003BA5EA /* IconListView.swift in Sources */,
+				14C1694F276CA34F003BA5EA /* IconFont.swift in Sources */,
+				14C1693C276CA34F003BA5EA /* Icon.swift in Sources */,
+				14C16952276CA34F003BA5EA /* Octicons.swift in Sources */,
+				14C1694D276CA34F003BA5EA /* IconButton.swift in Sources */,
+				14C1695C276CA34F003BA5EA /* MaterialCommunityIcons.swift in Sources */,
+				14C16957276CA34F003BA5EA /* Ionicons.swift in Sources */,
+				14C16951276CA34F003BA5EA /* MaterialIcons.swift in Sources */,
+				14C16960276CA366003BA5EA /* IconDemoView.swift in Sources */,
+				14C16955276CA34F003BA5EA /* FontAwesome5.swift in Sources */,
+				14C16959276CA34F003BA5EA /* Fontisto.swift in Sources */,
+				14C1695D276CA34F003BA5EA /* EvilIcons.swift in Sources */,
+				14C16950276CA34F003BA5EA /* Entypo.swift in Sources */,
+				14C1695B276CA34F003BA5EA /* AntDesign.swift in Sources */,
+				14C1695A276CA34F003BA5EA /* FontAwesome.swift in Sources */,
+				14C168EC276CA316003BA5EA /* iOSVectorIconsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C168F4276CA318003BA5EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C168FD276CA318003BA5EA /* iOSVectorIconsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C168FE276CA318003BA5EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C16909276CA318003BA5EA /* iOSVectorIconsUITestsLaunchTests.swift in Sources */,
+				14C16907276CA318003BA5EA /* iOSVectorIconsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14C168FA276CA318003BA5EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C168E7276CA316003BA5EA /* iOSVectorIcons */;
+			targetProxy = 14C168F9276CA318003BA5EA /* PBXContainerItemProxy */;
+		};
+		14C16904276CA318003BA5EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C168E7276CA316003BA5EA /* iOSVectorIcons */;
+			targetProxy = 14C16903276CA318003BA5EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14C1690A276CA318003BA5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14C1690B276CA318003BA5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14C1690D276CA318003BA5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSVectorIcons/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIcons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14C1690E276CA318003BA5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSVectorIcons/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIcons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14C16910276CA318003BA5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIconsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSVectorIcons.app/iOSVectorIcons";
+			};
+			name = Debug;
+		};
+		14C16911276CA318003BA5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIconsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSVectorIcons.app/iOSVectorIcons";
+			};
+			name = Release;
+		};
+		14C16913276CA318003BA5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIconsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSVectorIcons;
+			};
+			name = Debug;
+		};
+		14C16914276CA318003BA5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIconsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSVectorIcons;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14C168E3276CA316003BA5EA /* Build configuration list for PBXProject "iOSVectorIcons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C1690A276CA318003BA5EA /* Debug */,
+				14C1690B276CA318003BA5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C1690C276CA318003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIcons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C1690D276CA318003BA5EA /* Debug */,
+				14C1690E276CA318003BA5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C1690F276CA318003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIconsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C16910276CA318003BA5EA /* Debug */,
+				14C16911276CA318003BA5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C16912276CA318003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIconsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C16913276CA318003BA5EA /* Debug */,
+				14C16914276CA318003BA5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14C168E0276CA316003BA5EA /* Project object */;
+}

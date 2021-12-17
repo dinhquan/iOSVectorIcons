@@ -1,13 +1,13 @@
 //
-//  VectorIconsUITestsLaunchTests.swift
-//  VectorIconsUITests
+//  iOSVectorIconsUITestsLaunchTests.swift
+//  iOSVectorIconsUITests
 //
-//  Created by Quan on 15/11/2021.
+//  Created by Quan on 17/12/2021.
 //
 
 import XCTest
 
-class VectorIconsUITestsLaunchTests: XCTestCase {
+class iOSVectorIconsUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

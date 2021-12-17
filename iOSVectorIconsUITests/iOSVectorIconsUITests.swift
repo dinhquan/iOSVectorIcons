@@ -1,13 +1,13 @@
 //
-//  VectorIconsUITests.swift
-//  VectorIconsUITests
+//  iOSVectorIconsUITests.swift
+//  iOSVectorIconsUITests
 //
-//  Created by Quan on 15/11/2021.
+//  Created by Quan on 17/12/2021.
 //
 
 import XCTest
 
-class VectorIconsUITests: XCTestCase {
+class iOSVectorIconsUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
