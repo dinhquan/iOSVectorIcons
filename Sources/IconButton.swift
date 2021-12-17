@@ -11,18 +11,15 @@ public struct IconButton: View {
     let icon: IconFont
     let size: CGFloat
     let color: Color
-    let fill: Fill!
-    let action: () -> Void
+    let action: (() -> Void)?
 
     public init(_ icon: IconFont,
                 size: CGFloat = 16,
                 color: Color = .black,
-                fill: Fill? = nil,
-                action: @escaping () -> Void) {
+                action: (() -> Void)? = nil) {
         self.icon = icon
         self.size = size
         self.color = color
-        self.fill = fill
         self.action = action
         
         if !FontRegistering.shared.isRegistered {
@@ -31,51 +28,36 @@ public struct IconButton: View {
     }
     
     public var body: some View {
-        Button(action: action) {
+        Button {
+            action?()
+        } label: {
             Text(icon.text)
                 .font(Font.custom(icon.fontName, size: size))
                 .foregroundColor(color)
-        }
-        .if(fill != nil) {
-            $0.buttonStyle(
-                HighlightedButtonStyle(width: fill.width,
-                                       height: fill.height,
-                                       backgroundColor: fill.color,
-                                       underlayColor: fill.highlightedColor,
-                                       cornerRadius: fill.cornerRadius,
-                                       borderColor: fill.borderColor,
-                                       borderWidth: fill.borderWidth)
-            )
         }
     }
 }
 
 extension IconButton {
-    public struct Fill {
-        var color: Color
-        var highlightedColor: Color
-        var width: CGFloat!
-        var height: CGFloat!
-        var cornerRadius: CGFloat
-        var borderWidth: CGFloat
-        var borderColor: Color
-        
-        init(color: Color = .white,
-             highlightedColor: Color? = nil,
-             width: CGFloat? = nil,
-             height: CGFloat? = nil,
-             cornerRadius: CGFloat = 8,
-             borderWidth: CGFloat = 1,
-             borderColor: Color = .black) {
-            self.color = color
-            self.width = width
-            self.height = height
-            self.cornerRadius = cornerRadius
-            self.borderWidth = borderWidth
-            self.borderColor = borderColor
-            
-            self.highlightedColor = highlightedColor ?? color.opacity(0.5)
-        }
+    func style(
+        width: CGFloat? = nil,
+        height: CGFloat? = nil,
+        backgroundColor: Color = .clear,
+        highlightedColor: Color? = nil,
+        cornerRadius: CGFloat = 0,
+        borderWidth: CGFloat = 0,
+        borderColor: Color = .black
+    ) -> some View {
+        let _highlightedColor = highlightedColor ?? backgroundColor.opacity(0.5)
+        return buttonStyle(
+            HighlightedButtonStyle(width: width,
+                                   height: height,
+                                   backgroundColor: backgroundColor,
+                                   highlightedColor: _highlightedColor,
+                                   cornerRadius: cornerRadius,
+                                   borderColor: borderColor,
+                                   borderWidth: borderWidth)
+        )
     }
 }
 
@@ -83,7 +65,7 @@ private struct HighlightedButtonStyle: ButtonStyle {
     let width: CGFloat!
     let height: CGFloat!
     let backgroundColor: Color
-    let underlayColor: Color
+    let highlightedColor: Color
     let cornerRadius: CGFloat
     let borderColor: Color
     let borderWidth: CGFloat
@@ -108,7 +90,7 @@ private struct HighlightedButtonStyle: ButtonStyle {
             .if(height != nil && height != .infinity) {
                 $0.frame(height: height)
             }
-            .background(configuration.isPressed ? underlayColor : backgroundColor)
+            .background(configuration.isPressed ? highlightedColor : backgroundColor)
             .cornerRadius(cornerRadius)
             .overlay(
                 RoundedRectangle(cornerRadius: cornerRadius)
