@@ -38,7 +38,7 @@ public struct IconButton: View {
 }
 
 @available(iOS 13.0.0, *)
-extension IconButton {
+public extension IconButton {
     func style(
         width: CGFloat? = nil,
         height: CGFloat? = nil,

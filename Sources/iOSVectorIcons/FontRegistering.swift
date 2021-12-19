@@ -19,7 +19,11 @@ final class FontRegistering {
     }
     
     func registerFonts() {
+#if SWIFT_PACKAGE
+        let bundle = Bundle.module
+#else
         let bundle = Bundle(for: Self.self)
+#endif
         let fontFiles = [
             "AntDesign",
             "Entypo",

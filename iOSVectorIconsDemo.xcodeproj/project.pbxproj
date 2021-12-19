@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C16A17276F0F4B003BA5EA /* iOSVectorIconsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A16276F0F4B003BA5EA /* iOSVectorIconsDemoApp.swift */; };
+		14C16A19276F0F4B003BA5EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A18276F0F4B003BA5EA /* ContentView.swift */; };
+		14C16A1B276F0F4C003BA5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A1A276F0F4C003BA5EA /* Assets.xcassets */; };
+		14C16A1E276F0F4C003BA5EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A1D276F0F4C003BA5EA /* Preview Assets.xcassets */; };
+		14C16A2C276F129E003BA5EA /* IconDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A2A276F129E003BA5EA /* IconDemoView.swift */; };
+		14C16A2D276F129E003BA5EA /* IconListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A2B276F129E003BA5EA /* IconListView.swift */; };
+		14C16A61276F168F003BA5EA /* FontRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A3C276F168F003BA5EA /* FontRegistering.swift */; };
+		14C16A62276F168F003BA5EA /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A3D276F168F003BA5EA /* Icon.swift */; };
+		14C16A63276F168F003BA5EA /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A3F276F168F003BA5EA /* Fontisto.ttf */; };
+		14C16A64276F168F003BA5EA /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A40276F168F003BA5EA /* Octicons.ttf */; };
+		14C16A65276F168F003BA5EA /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A41276F168F003BA5EA /* Feather.ttf */; };
+		14C16A66276F168F003BA5EA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A42276F168F003BA5EA /* Entypo.ttf */; };
+		14C16A67276F168F003BA5EA /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A43276F168F003BA5EA /* FontAwesome5_Brands.ttf */; };
+		14C16A68276F168F003BA5EA /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A44276F168F003BA5EA /* MaterialCommunityIcons.ttf */; };
+		14C16A69276F168F003BA5EA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A45276F168F003BA5EA /* AntDesign.ttf */; };
+		14C16A6A276F168F003BA5EA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A46276F168F003BA5EA /* Foundation.ttf */; };
+		14C16A6B276F168F003BA5EA /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A47276F168F003BA5EA /* Ionicons.ttf */; };
+		14C16A6C276F168F003BA5EA /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A48276F168F003BA5EA /* FontAwesome5_Solid.ttf */; };
+		14C16A6D276F168F003BA5EA /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A49276F168F003BA5EA /* FontAwesome5_Regular.ttf */; };
+		14C16A6E276F168F003BA5EA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A4A276F168F003BA5EA /* FontAwesome.ttf */; };
+		14C16A6F276F168F003BA5EA /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A4B276F168F003BA5EA /* Zocial.ttf */; };
+		14C16A70276F168F003BA5EA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A4C276F168F003BA5EA /* EvilIcons.ttf */; };
+		14C16A71276F168F003BA5EA /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A4D276F168F003BA5EA /* SimpleLineIcons.ttf */; };
+		14C16A72276F168F003BA5EA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C16A4E276F168F003BA5EA /* MaterialIcons.ttf */; };
+		14C16A73276F168F003BA5EA /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A4F276F168F003BA5EA /* IconButton.swift */; };
+		14C16A74276F168F003BA5EA /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A50276F168F003BA5EA /* UIKitExtension.swift */; };
+		14C16A75276F168F003BA5EA /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A51276F168F003BA5EA /* IconFont.swift */; };
+		14C16A76276F168F003BA5EA /* Entypo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A53276F168F003BA5EA /* Entypo.swift */; };
+		14C16A77276F168F003BA5EA /* MaterialIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A54276F168F003BA5EA /* MaterialIcons.swift */; };
+		14C16A78276F168F003BA5EA /* Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A55276F168F003BA5EA /* Octicons.swift */; };
+		14C16A79276F168F003BA5EA /* SimpleLineIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A56276F168F003BA5EA /* SimpleLineIcons.swift */; };
+		14C16A7A276F168F003BA5EA /* Zocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A57276F168F003BA5EA /* Zocial.swift */; };
+		14C16A7B276F168F003BA5EA /* FontAwesome5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A58276F168F003BA5EA /* FontAwesome5.swift */; };
+		14C16A7C276F168F003BA5EA /* Feather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A59276F168F003BA5EA /* Feather.swift */; };
+		14C16A7D276F168F003BA5EA /* Ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A5A276F168F003BA5EA /* Ionicons.swift */; };
+		14C16A7E276F168F003BA5EA /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A5B276F168F003BA5EA /* Foundation.swift */; };
+		14C16A7F276F168F003BA5EA /* Fontisto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A5C276F168F003BA5EA /* Fontisto.swift */; };
+		14C16A80276F168F003BA5EA /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A5D276F168F003BA5EA /* FontAwesome.swift */; };
+		14C16A81276F168F003BA5EA /* AntDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A5E276F168F003BA5EA /* AntDesign.swift */; };
+		14C16A82276F168F003BA5EA /* MaterialCommunityIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A5F276F168F003BA5EA /* MaterialCommunityIcons.swift */; };
+		14C16A83276F168F003BA5EA /* EvilIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C16A60276F168F003BA5EA /* EvilIcons.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14C16A13276F0F4B003BA5EA /* iOSVectorIconsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVectorIconsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C16A16276F0F4B003BA5EA /* iOSVectorIconsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSVectorIconsDemoApp.swift; sourceTree = "<group>"; };
+		14C16A18276F0F4B003BA5EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14C16A1A276F0F4C003BA5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14C16A1D276F0F4C003BA5EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14C16A2A276F129E003BA5EA /* IconDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconDemoView.swift; sourceTree = "<group>"; };
+		14C16A2B276F129E003BA5EA /* IconListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconListView.swift; sourceTree = "<group>"; };
+		14C16A3C276F168F003BA5EA /* FontRegistering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRegistering.swift; sourceTree = "<group>"; };
+		14C16A3D276F168F003BA5EA /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		14C16A3F276F168F003BA5EA /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		14C16A40276F168F003BA5EA /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		14C16A41276F168F003BA5EA /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		14C16A42276F168F003BA5EA /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		14C16A43276F168F003BA5EA /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		14C16A44276F168F003BA5EA /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		14C16A45276F168F003BA5EA /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		14C16A46276F168F003BA5EA /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		14C16A47276F168F003BA5EA /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		14C16A48276F168F003BA5EA /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		14C16A49276F168F003BA5EA /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		14C16A4A276F168F003BA5EA /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		14C16A4B276F168F003BA5EA /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		14C16A4C276F168F003BA5EA /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		14C16A4D276F168F003BA5EA /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		14C16A4E276F168F003BA5EA /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		14C16A4F276F168F003BA5EA /* IconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		14C16A50276F168F003BA5EA /* UIKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		14C16A51276F168F003BA5EA /* IconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
+		14C16A53276F168F003BA5EA /* Entypo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entypo.swift; sourceTree = "<group>"; };
+		14C16A54276F168F003BA5EA /* MaterialIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialIcons.swift; sourceTree = "<group>"; };
+		14C16A55276F168F003BA5EA /* Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octicons.swift; sourceTree = "<group>"; };
+		14C16A56276F168F003BA5EA /* SimpleLineIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLineIcons.swift; sourceTree = "<group>"; };
+		14C16A57276F168F003BA5EA /* Zocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zocial.swift; sourceTree = "<group>"; };
+		14C16A58276F168F003BA5EA /* FontAwesome5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome5.swift; sourceTree = "<group>"; };
+		14C16A59276F168F003BA5EA /* Feather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feather.swift; sourceTree = "<group>"; };
+		14C16A5A276F168F003BA5EA /* Ionicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ionicons.swift; sourceTree = "<group>"; };
+		14C16A5B276F168F003BA5EA /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		14C16A5C276F168F003BA5EA /* Fontisto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fontisto.swift; sourceTree = "<group>"; };
+		14C16A5D276F168F003BA5EA /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
+		14C16A5E276F168F003BA5EA /* AntDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntDesign.swift; sourceTree = "<group>"; };
+		14C16A5F276F168F003BA5EA /* MaterialCommunityIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialCommunityIcons.swift; sourceTree = "<group>"; };
+		14C16A60276F168F003BA5EA /* EvilIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvilIcons.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14C16A10276F0F4B003BA5EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14C16A0A276F0F4B003BA5EA = {
+			isa = PBXGroup;
+			children = (
+				14C16A3A276F168F003BA5EA /* Sources */,
+				14C16A15276F0F4B003BA5EA /* iOSVectorIconsDemo */,
+				14C16A14276F0F4B003BA5EA /* Products */,
+				14C16A25276F116B003BA5EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14C16A14276F0F4B003BA5EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14C16A13276F0F4B003BA5EA /* iOSVectorIconsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14C16A15276F0F4B003BA5EA /* iOSVectorIconsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				14C16A2A276F129E003BA5EA /* IconDemoView.swift */,
+				14C16A2B276F129E003BA5EA /* IconListView.swift */,
+				14C16A18276F0F4B003BA5EA /* ContentView.swift */,
+				14C16A16276F0F4B003BA5EA /* iOSVectorIconsDemoApp.swift */,
+				14C16A1A276F0F4C003BA5EA /* Assets.xcassets */,
+				14C16A1C276F0F4C003BA5EA /* Preview Content */,
+			);
+			path = iOSVectorIconsDemo;
+			sourceTree = "<group>";
+		};
+		14C16A1C276F0F4C003BA5EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14C16A1D276F0F4C003BA5EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14C16A25276F116B003BA5EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14C16A3A276F168F003BA5EA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				14C16A3B276F168F003BA5EA /* iOSVectorIcons */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		14C16A3B276F168F003BA5EA /* iOSVectorIcons */ = {
+			isa = PBXGroup;
+			children = (
+				14C16A3D276F168F003BA5EA /* Icon.swift */,
+				14C16A4F276F168F003BA5EA /* IconButton.swift */,
+				14C16A50276F168F003BA5EA /* UIKitExtension.swift */,
+				14C16A51276F168F003BA5EA /* IconFont.swift */,
+				14C16A3C276F168F003BA5EA /* FontRegistering.swift */,
+				14C16A52276F168F003BA5EA /* Fonts */,
+				14C16A3E276F168F003BA5EA /* Resources */,
+			);
+			path = iOSVectorIcons;
+			sourceTree = "<group>";
+		};
+		14C16A3E276F168F003BA5EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14C16A45276F168F003BA5EA /* AntDesign.ttf */,
+				14C16A42276F168F003BA5EA /* Entypo.ttf */,
+				14C16A4C276F168F003BA5EA /* EvilIcons.ttf */,
+				14C16A41276F168F003BA5EA /* Feather.ttf */,
+				14C16A4A276F168F003BA5EA /* FontAwesome.ttf */,
+				14C16A43276F168F003BA5EA /* FontAwesome5_Brands.ttf */,
+				14C16A49276F168F003BA5EA /* FontAwesome5_Regular.ttf */,
+				14C16A48276F168F003BA5EA /* FontAwesome5_Solid.ttf */,
+				14C16A3F276F168F003BA5EA /* Fontisto.ttf */,
+				14C16A46276F168F003BA5EA /* Foundation.ttf */,
+				14C16A47276F168F003BA5EA /* Ionicons.ttf */,
+				14C16A44276F168F003BA5EA /* MaterialCommunityIcons.ttf */,
+				14C16A4E276F168F003BA5EA /* MaterialIcons.ttf */,
+				14C16A40276F168F003BA5EA /* Octicons.ttf */,
+				14C16A4D276F168F003BA5EA /* SimpleLineIcons.ttf */,
+				14C16A4B276F168F003BA5EA /* Zocial.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14C16A52276F168F003BA5EA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				14C16A5E276F168F003BA5EA /* AntDesign.swift */,
+				14C16A53276F168F003BA5EA /* Entypo.swift */,
+				14C16A60276F168F003BA5EA /* EvilIcons.swift */,
+				14C16A59276F168F003BA5EA /* Feather.swift */,
+				14C16A5D276F168F003BA5EA /* FontAwesome.swift */,
+				14C16A58276F168F003BA5EA /* FontAwesome5.swift */,
+				14C16A5C276F168F003BA5EA /* Fontisto.swift */,
+				14C16A5B276F168F003BA5EA /* Foundation.swift */,
+				14C16A5A276F168F003BA5EA /* Ionicons.swift */,
+				14C16A5F276F168F003BA5EA /* MaterialCommunityIcons.swift */,
+				14C16A54276F168F003BA5EA /* MaterialIcons.swift */,
+				14C16A55276F168F003BA5EA /* Octicons.swift */,
+				14C16A56276F168F003BA5EA /* SimpleLineIcons.swift */,
+				14C16A57276F168F003BA5EA /* Zocial.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14C16A12276F0F4B003BA5EA /* iOSVectorIconsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C16A21276F0F4C003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIconsDemo" */;
+			buildPhases = (
+				14C16A0F276F0F4B003BA5EA /* Sources */,
+				14C16A10276F0F4B003BA5EA /* Frameworks */,
+				14C16A11276F0F4B003BA5EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSVectorIconsDemo;
+			packageProductDependencies = (
+			);
+			productName = iOSVectorIconsDemo;
+			productReference = 14C16A13276F0F4B003BA5EA /* iOSVectorIconsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14C16A0B276F0F4B003BA5EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					14C16A12276F0F4B003BA5EA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 14C16A0E276F0F4B003BA5EA /* Build configuration list for PBXProject "iOSVectorIconsDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14C16A0A276F0F4B003BA5EA;
+			productRefGroup = 14C16A14276F0F4B003BA5EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14C16A12276F0F4B003BA5EA /* iOSVectorIconsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14C16A11276F0F4B003BA5EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C16A63276F168F003BA5EA /* Fontisto.ttf in Resources */,
+				14C16A6E276F168F003BA5EA /* FontAwesome.ttf in Resources */,
+				14C16A6A276F168F003BA5EA /* Foundation.ttf in Resources */,
+				14C16A6D276F168F003BA5EA /* FontAwesome5_Regular.ttf in Resources */,
+				14C16A6B276F168F003BA5EA /* Ionicons.ttf in Resources */,
+				14C16A70276F168F003BA5EA /* EvilIcons.ttf in Resources */,
+				14C16A66276F168F003BA5EA /* Entypo.ttf in Resources */,
+				14C16A1E276F0F4C003BA5EA /* Preview Assets.xcassets in Resources */,
+				14C16A6F276F168F003BA5EA /* Zocial.ttf in Resources */,
+				14C16A71276F168F003BA5EA /* SimpleLineIcons.ttf in Resources */,
+				14C16A65276F168F003BA5EA /* Feather.ttf in Resources */,
+				14C16A64276F168F003BA5EA /* Octicons.ttf in Resources */,
+				14C16A67276F168F003BA5EA /* FontAwesome5_Brands.ttf in Resources */,
+				14C16A69276F168F003BA5EA /* AntDesign.ttf in Resources */,
+				14C16A72276F168F003BA5EA /* MaterialIcons.ttf in Resources */,
+				14C16A6C276F168F003BA5EA /* FontAwesome5_Solid.ttf in Resources */,
+				14C16A68276F168F003BA5EA /* MaterialCommunityIcons.ttf in Resources */,
+				14C16A1B276F0F4C003BA5EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14C16A0F276F0F4B003BA5EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C16A80276F168F003BA5EA /* FontAwesome.swift in Sources */,
+				14C16A7E276F168F003BA5EA /* Foundation.swift in Sources */,
+				14C16A62276F168F003BA5EA /* Icon.swift in Sources */,
+				14C16A77276F168F003BA5EA /* MaterialIcons.swift in Sources */,
+				14C16A75276F168F003BA5EA /* IconFont.swift in Sources */,
+				14C16A61276F168F003BA5EA /* FontRegistering.swift in Sources */,
+				14C16A74276F168F003BA5EA /* UIKitExtension.swift in Sources */,
+				14C16A73276F168F003BA5EA /* IconButton.swift in Sources */,
+				14C16A19276F0F4B003BA5EA /* ContentView.swift in Sources */,
+				14C16A7C276F168F003BA5EA /* Feather.swift in Sources */,
+				14C16A76276F168F003BA5EA /* Entypo.swift in Sources */,
+				14C16A81276F168F003BA5EA /* AntDesign.swift in Sources */,
+				14C16A7F276F168F003BA5EA /* Fontisto.swift in Sources */,
+				14C16A2D276F129E003BA5EA /* IconListView.swift in Sources */,
+				14C16A83276F168F003BA5EA /* EvilIcons.swift in Sources */,
+				14C16A17276F0F4B003BA5EA /* iOSVectorIconsDemoApp.swift in Sources */,
+				14C16A2C276F129E003BA5EA /* IconDemoView.swift in Sources */,
+				14C16A79276F168F003BA5EA /* SimpleLineIcons.swift in Sources */,
+				14C16A82276F168F003BA5EA /* MaterialCommunityIcons.swift in Sources */,
+				14C16A7D276F168F003BA5EA /* Ionicons.swift in Sources */,
+				14C16A7B276F168F003BA5EA /* FontAwesome5.swift in Sources */,
+				14C16A78276F168F003BA5EA /* Octicons.swift in Sources */,
+				14C16A7A276F168F003BA5EA /* Zocial.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14C16A1F276F0F4C003BA5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14C16A20276F0F4C003BA5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14C16A22276F0F4C003BA5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSVectorIconsDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIconsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14C16A23276F0F4C003BA5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSVectorIconsDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinhquan.iOSVectorIconsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14C16A0E276F0F4B003BA5EA /* Build configuration list for PBXProject "iOSVectorIconsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C16A1F276F0F4C003BA5EA /* Debug */,
+				14C16A20276F0F4C003BA5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C16A21276F0F4C003BA5EA /* Build configuration list for PBXNativeTarget "iOSVectorIconsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C16A22276F0F4C003BA5EA /* Debug */,
+				14C16A23276F0F4C003BA5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14C16A0B276F0F4B003BA5EA /* Project object */;
+}
