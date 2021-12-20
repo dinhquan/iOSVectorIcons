@@ -1,7 +1,6 @@
 # iOSVectorIcons
 
-Choose from 10k+ icons to use.  
-`iOSVectorIcons` was inspried from [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). You can search for icons by using demo app or this [link](https://oblador.github.io/react-native-vector-icons/).
+Choose from 10k+ icons to use. `iOSVectorIcons` was inspried from [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). You can search for icons by using demo app or this [link](https://oblador.github.io/react-native-vector-icons/).
 
 ![](https://raw.githubusercontent.com/dinhquan/iOSVectorIcons/main/iOSVectorIconsDemo/Demo/Demo.png)
 
@@ -37,7 +36,7 @@ iOSVectorIcons provides `Icon` view for creating a simple icon.
 ```swift
 Icon(.ionicons(.home))
 
-// Customize icon size & color
+// Customize size & color
 Icon(.materialIcons(.message), size: 24, color: .blue)
 ```
 
@@ -59,7 +58,7 @@ Customize style to create border, circle or filled button by `style` modifier. E
 IconButton(.octicons(.plus), size: 20, color: .red)
     .style(horizontalPadding: 20, cornerRadius: 10, borderWidth: 2, borderColor: .red)
 
-// Circle Buttons (corner radius = width / 2)
+// Circle button (corner radius = width / 2)
 IconButton(.antDesign(.play), size: 40, color: .white)
     .style(width: 60, height: 60, backgroundColor: .blue, cornerRadius: 30)
 
@@ -87,7 +86,7 @@ func style(
 ) -> some View
 ```
 
-If width/height are not set, the button size will based on horizontalPadding/verticalPadding. You can set width to `.infinity` to make the button width fill its parent.
+If width/height are not set, the button size will be based on horizontalPadding/verticalPadding. You can set width to `.infinity` to make the button width fill its parent.
 
 ### UIKit
 
