@@ -1,10 +1,9 @@
 # iOSVectorIcons
-===========
 
 Choose from 10k+ icons to use. 
 `iOSVectorIcons` was inspried from [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). You can search for icons by using demo app or this [link](https://oblador.github.io/react-native-vector-icons/).
 
-![](https://raw.githubusercontent.com/dinhquan/iOSVectorIcons/master/iOSVectorIconsDemo/Demo/demo.png)
+![](https://raw.githubusercontent.com/dinhquan/iOSVectorIcons/main/iOSVectorIconsDemo/Demo/Demo.png)
 
 ## Installation
 
