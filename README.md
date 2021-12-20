@@ -34,11 +34,13 @@ dependencies: [
 iOSVectorIcons provides `Icon` view for creating a simple icon.
 
 ```swift
-Icon(.ionicons(.home)
+Icon(.ionicons(.home))
 
 // Customize icon size & color
 Icon(.ionicons(.home), size: 24, color: .blue)
 ```
+
+Generaly, we create an Icon with `IconFont`, size/color (optional). IconFonts are defined as enum so it's strong typed, you are guaranteed no typo in your code.
 
 Create a button with `IconButton`
 
