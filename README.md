@@ -1,6 +1,6 @@
 # iOSVectorIcons
 
-Choose from 10k+ icons to use. `iOSVectorIcons` was inspried from [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). You can search for icons by using demo app or this [link](https://oblador.github.io/react-native-vector-icons/).
+Choose from 10k+ icons to use. `iOSVectorIcons` is inspired by [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). You can search for icons by using demo app or this [link](https://oblador.github.io/react-native-vector-icons/).
 
 ![](https://raw.githubusercontent.com/dinhquan/iOSVectorIcons/main/iOSVectorIconsDemo/Demo/Demo.png)
 
@@ -40,7 +40,7 @@ Icon(.ionicons(.home))
 Icon(.materialIcons(.message), size: 24, color: .blue)
 ```
 
-Generally, we create an Icon with IconFont, size/color (optional). `IconFont` is defined as enum so it's strong typed, you are guaranteed no typo in your code.
+Generally, we create an Icon with IconFont and size/color (optional). `IconFont` is defined as enum so it's strong typed, you are guaranteed with no typo in your code.
 
 #### Button
 Create a button with `IconButton`
