@@ -42,6 +42,8 @@ public extension IconButton {
     func style(
         width: CGFloat? = nil,
         height: CGFloat? = nil,
+        horizontalPadding: CGFloat? = nil,
+        verticalPadding: CGFloat? = nil,
         backgroundColor: Color = .clear,
         highlightedColor: Color? = nil,
         cornerRadius: CGFloat = 0,
@@ -52,6 +54,8 @@ public extension IconButton {
         return buttonStyle(
             HighlightedButtonStyle(width: width,
                                    height: height,
+                                   horizontalPadding: horizontalPadding,
+                                   verticalPadding: verticalPadding,
                                    backgroundColor: backgroundColor,
                                    highlightedColor: _highlightedColor,
                                    cornerRadius: cornerRadius,
@@ -65,6 +69,8 @@ public extension IconButton {
 private struct HighlightedButtonStyle: ButtonStyle {
     let width: CGFloat!
     let height: CGFloat!
+    let horizontalPadding: CGFloat?
+    let verticalPadding: CGFloat?
     let backgroundColor: Color
     let highlightedColor: Color
     let cornerRadius: CGFloat
@@ -74,10 +80,10 @@ private struct HighlightedButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .if(width == nil) {
-                $0.padding(.horizontal, 8)
+                $0.padding(.horizontal, horizontalPadding ?? 8)
             }
             .if(height == nil) {
-                $0.padding(.vertical, 8)
+                $0.padding(.vertical, verticalPadding ?? 8)
             }
             .if(width != nil && width == .infinity) {
                 $0.frame(maxWidth: .infinity)

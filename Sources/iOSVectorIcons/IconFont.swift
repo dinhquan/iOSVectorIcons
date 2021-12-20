@@ -13,7 +13,7 @@ public enum IconFont {
     case evilIcons(EvilIcons)
     case feather(Feather)
     case fontAwesome(FontAwesome)
-    case fontAewsome5(FontAwesome5)
+    case fontAwesome5(FontAwesome5)
     case fontisto(Fontisto)
     case foundation(Foundation)
     case ionicons(Ionicons)
@@ -37,7 +37,7 @@ extension IconFont {
             return "Feather"
         case .fontAwesome:
             return "FontAwesome"
-        case .fontAewsome5:
+        case .fontAwesome5:
             return "Font Awesome 5 Free"
         case .fontisto:
             return "fontisto"
@@ -70,7 +70,7 @@ extension IconFont {
             return value.rawValue.unicodeString
         case .fontAwesome(let value):
             return value.rawValue.unicodeString
-        case .fontAewsome5(let value):
+        case .fontAwesome5(let value):
             return value.rawValue.unicodeString
         case .fontisto(let value):
             return value.rawValue.unicodeString

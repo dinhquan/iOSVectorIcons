@@ -21,10 +21,10 @@ struct IconDemoView: View {
                 }.padding(.top, 5)
                 Title("Border Buttons")
                 HStack(spacing: 20) {
-IconButton(.ionicons(.settings_sharp), size: 20)
-    .style(width: 100, highlightedColor: .gray, cornerRadius: 20, borderWidth: 2, borderColor: .black)
+                    IconButton(.ionicons(.settings_sharp), size: 20)
+                        .style(width: 100, highlightedColor: .gray, cornerRadius: 20, borderWidth: 2, borderColor: .black)
                     IconButton(.octicons(.plus), size: 20, color: .red)
-                        .style(width: 60, cornerRadius: 10, borderWidth: 2, borderColor: .red)
+                        .style(horizontalPadding: 20, cornerRadius: 10, borderWidth: 2, borderColor: .red)
                 }
                 Title("Circle Buttons")
                 HStack(spacing: 20) {

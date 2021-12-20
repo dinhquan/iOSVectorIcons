@@ -38,7 +38,7 @@ iOSVectorIcons provides `Icon` view for creating a simple icon.
 Icon(.ionicons(.home))
 
 // Customize icon size & color
-Icon(.ionicons(.home), size: 24, color: .blue)
+Icon(.materialIcons(.message), size: 24, color: .blue)
 ```
 
 Generally, we create an Icon with IconFont, size/color (optional). `IconFont` is defined as enum so it's strong typed, you are guaranteed no typo in your code.
@@ -56,21 +56,38 @@ Customize style to create border, circle or filled button by `style` modifier. E
 
 ```swift
 // Border button
-IconButton(.ionicons(.settings_sharp), size: 20)
-    .style(width: 100, highlightedColor: .gray, cornerRadius: 20, borderWidth: 2, borderColor: .black)
+IconButton(.octicons(.plus), size: 20, color: .red)
+    .style(horizontalPadding: 20, cornerRadius: 10, borderWidth: 2, borderColor: .red)
 
 // Circle Buttons (corner radius = width / 2)
-IconButton(.ionicons(.play), size: 40, color: .white)
+IconButton(.antDesign(.play), size: 40, color: .white)
     .style(width: 60, height: 60, backgroundColor: .blue, cornerRadius: 30)
 
 // Filled button
-IconButton(.ionicons(.trash), size: 24, color: .white)
+IconButton(.fontAwesome(.trash), size: 24, color: .white)
     .style(width: 80, height: 40, backgroundColor: .red, cornerRadius: 10)
 
 // Full-width button
-IconButton(.ionicons(.cloud_download), size: 24, color: .white)
+IconButton(.ionicons(.download), size: 24, color: .white)
     .style(width: .infinity, height: 50, backgroundColor: .blue, cornerRadius: 8)
 ```
+
+With style modifier, you can customize the following properties:
+```swift
+func style(
+    width: CGFloat? = nil,
+    height: CGFloat? = nil,
+    horizontalPadding: CGFloat? = nil,
+    verticalPadding: CGFloat? = nil,
+    backgroundColor: Color = .clear,
+    highlightedColor: Color? = nil,
+    cornerRadius: CGFloat = 0,
+    borderWidth: CGFloat = 0,
+    borderColor: Color = .black
+) -> some View
+```
+
+If width/height are not set, the button size will based on horizontalPadding/verticalPadding. You can set width to `.infinity` to make the button width fill its parent.
 
 ### UIKit
 

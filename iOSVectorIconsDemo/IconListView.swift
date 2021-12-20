@@ -112,7 +112,7 @@ struct IconCollection {
             IconCollection(name: "Evil Icons", items: IconFont.EvilIcons.allCases.map { Item(name: String(describing: $0), icon: IconFont.evilIcons($0)) }),
             IconCollection(name: "Feather", items: IconFont.Feather.allCases.map { Item(name: String(describing: $0), icon: IconFont.feather($0)) }),
             IconCollection(name: "Font Awesome", items: IconFont.FontAwesome.allCases.map { Item(name: String(describing: $0), icon: IconFont.fontAwesome($0)) }),
-            IconCollection(name: "Font Awesome 5", items: IconFont.FontAwesome5.allCases.map { Item(name: String(describing: $0), icon: IconFont.fontAewsome5($0)) }),
+            IconCollection(name: "Font Awesome 5", items: IconFont.FontAwesome5.allCases.map { Item(name: String(describing: $0), icon: IconFont.fontAwesome5($0)) }),
             IconCollection(name: "Fontisto", items: IconFont.Fontisto.allCases.map { Item(name: String(describing: $0), icon: IconFont.fontisto($0)) }),
             IconCollection(name: "Foundation", items: IconFont.Foundation.allCases.map { Item(name: String(describing: $0), icon: IconFont.foundation($0)) }),
             IconCollection(name: "Ionicons", items: IconFont.Ionicons.allCases.map { Item(name: String(describing: $0), icon: IconFont.ionicons($0)) }),
