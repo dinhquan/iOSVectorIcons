@@ -1,6 +1,6 @@
 # iOSVectorIcons
 
-Choose from 10k+ icons to use. 
+Choose from 10k+ icons to use.  
 `iOSVectorIcons` was inspried from [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). You can search for icons by using demo app or this [link](https://oblador.github.io/react-native-vector-icons/).
 
 ![](https://raw.githubusercontent.com/dinhquan/iOSVectorIcons/main/iOSVectorIconsDemo/Demo/Demo.png)
@@ -29,8 +29,9 @@ dependencies: [
 
 ## Usage
 
-### SwifUI
+### SwiftUI
 
+#### Icon
 iOSVectorIcons provides `Icon` view for creating a simple icon.
 
 ```swift
@@ -40,8 +41,9 @@ Icon(.ionicons(.home))
 Icon(.ionicons(.home), size: 24, color: .blue)
 ```
 
-Generaly, we create an Icon with `IconFont`, size/color (optional). IconFonts are defined as enum so it's strong typed, you are guaranteed no typo in your code.
+Generally, we create an Icon with IconFont, size/color (optional). `IconFont` is defined as enum so it's strong typed, you are guaranteed no typo in your code.
 
+#### Button
 Create a button with `IconButton`
 
 ```swift
@@ -50,7 +52,7 @@ IconButton(.entypo(.share), size: 20, color: .black) {
 }
 ```
 
-Customize button style to create border, circle or filled button by `style` modifier. Examples:
+Customize style to create border, circle or filled button by `style` modifier. Examples:
 
 ```swift
 // Border button
@@ -75,10 +77,10 @@ IconButton(.ionicons(.cloud_download), size: 24, color: .white)
 Use `setIcon` method to set icon for `UILabel` or `UIButton`
 
 ```swift
-// Label
+// UILabel
 yourLabel.setIcon(.ionicons(.download))
 
-// Button, make sure button style is Default (in Storyboard/Xib)
+// UIButton, make sure button style is Default (in Storyboard/Xib)
 yourButton.setIcon(.entypo(.erase), size: 30, color: .red, for: .normal)
 ```
 
