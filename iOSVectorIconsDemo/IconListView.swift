@@ -30,7 +30,7 @@ struct IconListView: View {
         Group {
             VStack(spacing: 0) {
                 Group {
-                    TextField("Search an icon", text: $searchText)
+                    TextField("Search an icon (in 10K+ icons)", text: $searchText)
                         .onChange(of: searchText) {
                             search(keyword: $0.trimmingCharacters(in: .whitespacesAndNewlines))
                         }
